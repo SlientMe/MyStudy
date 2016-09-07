@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:inputType="phone"
+        android:hint="请输入姓名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:hint="请输入密码"
+        android:id="@+id/et_password"
+        android:inputType="textPassword"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="登录"
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="33dp"/>
+
+        <CheckBox
+            android:text="记住密码"
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/login"
+            android:layout_alignBottom="@+id/login"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
